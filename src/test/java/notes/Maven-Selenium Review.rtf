@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Thin;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red83\green83\blue83;\red255\green255\blue255;\red34\green45\blue53;
+}
+{\*\expandedcolortbl;;\cssrgb\c40000\c40000\c40000;\cssrgb\c100000\c100000\c100000;\cssrgb\c17647\c23137\c27059;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl900\sa300\qc\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Maven+Selenium review\
+\pard\pardeftab720\sl360\sa240\qc\partightenfactor0
+
+\f1\fs32 \cf4 \strokec4 06/12/2018\cb1 \uc0\u8232 \cb3 ----------\
+Office Hours:\
+Core Java: From basics(conditions, loops) to OOP.\cb1 \uc0\u8232 \cb3 Data structures, Basic IO, exceptions.\
+Selenium WebDriver ->\
+Git + GitHub ->\cb1 \uc0\u8232 \cb3 ===========================\
+How does Selenium identify elements on the web page?\
+Selenium can only see HTML source code and it finds elements\cb1 \uc0\u8232 \cb3 by different locators like:\cb1 \uc0\u8232 \cb3 ID, NAME, CSS, XPATH, CLASSNAME, LINKTEXT, PARTIALLINKTEXT\cb1 \uc0\u8232 \cb3 TAGNAME ETC.\
+WebDriver driver = new ChromeDriver();\cb1 \uc0\u8232 \cb3 driver.get("https://google.com")\cb1 \uc0\u8232 \cb3 driver.findElement(By.name("q")).sendKeys("cybertekschool");\cb1 \uc0\u8232 \cb3 ======================\
+SELENIUM ACTIONS LEVELS:\
+1) BROWSER LEVEL ACTIONS:\cb1 \uc0\u8232 \cb3 GET(URL) -> NAVIGATE TO PARTICULAR PAGE. URL\cb1 \uc0\u8232 \cb3 NAVIGATE().TO(URL) -> NAVIGATE TO PARTICULAR PAGE. URL\cb1 \uc0\u8232 \cb3 NAVIGATE().BACK() -> GO BACK TO PREVIOUS PAGE\cb1 \uc0\u8232 \cb3 NAVIGATE().FORWARD() -> GO TO NEXT PAGE\cb1 \uc0\u8232 \cb3 NAVIGATE().REFRESH() -> REFRESH THE PAGE\cb1 \uc0\u8232 \cb3 DRIVER.CLOSE() -> CLOSE CURRENT PAGE\cb1 \uc0\u8232 \cb3 DRIVER.QUIT() -> CLOSE ALL BROWSERS THAT ARE OPENED BY SELENIUM\cb1 \uc0\u8232 \cb3 SELENIUM CANNOT CONTROL ALREADY OPEN BROWSERS, UFT CAN\cb1 \uc0\u8232 \cb3 DRIVER.GETTITLE() -> <HTML> -> <HEAD> -> <TITLE>Postman | Apps</TITLE>\cb1 \uc0\u8232 \cb3 DRIVER.GETCURRENTURL -> RETURN URL OF PAGE\cb1 \uc0\u8232 \cb3 DRIVER.GETPAGESOURCE() -> get html page source\cb1 \uc0\u8232 \cb3 driver.manage().window().fullscreen(); -> make browser fullscreeen\cb1 \uc0\u8232 \cb3 driver.manage().window().maximize();\cb1 \uc0\u8232 \cb3 2) ELEMENT LEVEL ACTION:\cb1 \uc0\u8232 \cb3 FINDELEMENT\cb1 \uc0\u8232 \cb3 -----------------------\
+06/13/2018\cb1 \uc0\u8232 \cb3 ----------\
+1) Schedule - Monday, June 18\cb1 \uc0\u8232 \cb3 Weekday classes will go back to normal schedule: 7-10 pm est.\
+2) This Saturday June 16 -> OFF\cb1 \uc0\u8232 \cb3 This Sunday June 17 -> Normal Class\
+3) Campus Logistics -> Lets keep campus organized, Clean, Quiet.\cb1 \uc0\u8232 \cb3 New TrashCan -> Big One\
+4) New JavaScript Automation.\
+5) Using other common areas in the Building\
+6) Wifi -> please use it for school/study purposes.\
+7) Class attendance. Class Break.\
+8) Marufjon classes\
+9) homeworks - complete\
+===================================\
+Apache Maven -> build tool\
+Automation:\
+1) Dependencies. Libraries that we need in our project.\cb1 \uc0\u8232 \cb3 selenium Dependency, java faker Dependency.\
+2) Where do u put Dependencies?\cb1 \uc0\u8232 \cb3 in pom.xml\
+3) Where to get Dependencies?\cb1 \uc0\u8232 \cb3 mvnrepository.com\
+================\
+How to create maven project:\cb1 \uc0\u8232 \cb3 -> command line\cb1 \uc0\u8232 \cb3 -> eclipse\
+Steps:\
+\cb1 \uc0\u8232 \cb3 1) Set up environment. Install maven, java\
+2) Create Maven project\cb1 \uc0\u8232 \cb3 In Eclise -> File -> New -> -> Other -> Seach Maven\cb1 \uc0\u8232 \cb3 -> Maven project -> Check create a simple project ->\cb1 \uc0\u8232 \cb3 Add Group id , Artifact id. -> finish\
+3) add project Dependencies to pom.xml\cb1 \uc0\u8232 \cb3 Selenium tool Dependency\cb1 \uc0\u8232 \cb3 Bonnie Garcia's DriverManager\cb1 \uc0\u8232 \cb3 java faker\
+goto mvnrepository.com.\cb1 \uc0\u8232 \cb3 search -> selenium\
+Where are the Dependency jar files are stored\
+jar file is just a zipped version of java files.\
+mac:\cb1 \uc0\u8232 \cb3 /Users/userName/.m2\
+Windows:\cb1 \uc0\u8232 \cb3 C:\\Users\\username\\.m2\cb1 \uc0\u8232 \cb3 ======================================\
+what is .m2 folder?\
+-> maven stores jar files from mvnrepository to this folder.\
+-> Whenever you add a Dependency to pom.xml, and save the file\cb1 \uc0\u8232 \cb3 , maven will download the library and add it to your build path\cb1 \uc0\u8232 \cb3 automatically.\cb1 \uc0\u8232 \cb3 ===========================\
+Test case:\cb1 \uc0\u8232 \cb3 Title: dice job search\
+Step 1. Launch browser and navigate to https://dice.com\cb1 \uc0\u8232 \cb3 Expected: dice home page should be displayed\
+Step 2. Insert search keyword and location then click on\cb1 \uc0\u8232 \cb3 find tech jobs\cb1 \uc0\u8232 \cb3 Expected: -Search results page should be loaded.\cb1 \uc0\u8232 \cb3 -Page title should contain count of results ,\cb1 \uc0\u8232 \cb3 along with search keyword.\cb1 \uc0\u8232 \cb3 -Count of results should be displayed on the page.\cb1 \uc0\u8232 \cb3 ====================\cb1 \uc0\u8232 \cb3 Steps to automate:\cb1 \uc0\u8232 \cb3 -Make sure you understand what functionality is being tested\cb1 \uc0\u8232 \cb3 and each step. What is expected, what is being tested.\
+If you don't understand: Ask manual tester/person who wrote it.\cb1 \uc0\u8232 \cb3 BAs, Developers, Lead\
+-Manually test it and make sure , it is passing manually.\cb1 \uc0\u8232 \cb3 And make sure no defects/bugs around it.\cb1 \uc0\u8232 \cb3 -if a test case is failing manually, it does not qualify\cb1 \uc0\u8232 \cb3 for automation.\
+--> starts automating:\cb1 \uc0\u8232 \cb3 Java + Selenium + Maven + Git > Github\cb1 \uc0\u8232 \cb3 =========================\
+\'a0\
+//fullcreen\cb1 \uc0\u8232 \cb3 driver.manage().window().fullscreen();\cb1 \uc0\u8232 \cb3 driver.manage().window().maximize();\cb1 \uc0\u8232 \cb3 //set universal wait time in case web page is slow\cb1 \uc0\u8232 \cb3 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);\cb1 \uc0\u8232 \cb3 ==========================\
+1) Created empty github repo\cb1 \uc0\u8232 \cb3 2) using terminal we navigated to project folder.\cb1 \uc0\u8232 \cb3 3) git init -> create local repository\cb1 \uc0\u8232 \cb3 it makes your whole maven project a local repo.\
+4) git add pom.xml\cb1 \uc0\u8232 \cb3 5) git commit -m "comment"\cb1 \uc0\u8232 \cb3 6) link local repo to remote repo\cb1 \uc0\u8232 \cb3 git remote add origin https://github.com/CybertekSchool/selenium-maven-automation.git\cb1 \uc0\u8232 \cb3 7) git push -u origin master\cb1 \uc0\u8232 \cb3 push to remote in github\
+====================================\
+1)Create arraylist of keywords.\cb1 \uc0\u8232 \cb3 add 20 different keyworks\cb1 \uc0\u8232 \cb3 list.add("java");\
+pass each item to search box and print accordingly.\cb1 \uc0\u8232 \cb3 modify your arraylist\
+java-1234\
+2) Store all keywords into a text file\cb1 \uc0\u8232 \cb3 read the text file and repeat above steps.\
+store keyword and results count into an arraylist.\cb1 \uc0\u8232 \cb3 ----\
+after closing browser.\cb1 \uc0\u8232 \cb3 print contents of arraylist that was updated each time\cb1 \uc0\u8232 \cb3 we looped.\
+commit > push > share your github link\
+}

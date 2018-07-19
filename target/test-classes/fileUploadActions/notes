@@ -1,0 +1,59 @@
+file downloads:
+
+    Selenium does NOT support testing file downloads. File download triggers a windows which comes from the OS and selenium cannot automate native OS windows
+
+    There tools that can automate native windows:    
+        AutoIT --> only works on WIndows 
+        Robot framework  --> java library, works anywhere where java works
+        Sikuli   -> works windows, unix  
+
+    We can use java to verify if file exists in certain folder.    
+    We can use java to read and verify contents certain files.
+
+    __
+        
+
+File upload:
+
+Selemium supports file uplaod opertations. 
+1. To upload a file using selenium, we need to locate the element which opens the pop up window.  it has to have tag INPUT. then using the sendKeys method, pass the full path of the file which you want to upload. 
+2. click on the upload button
+
+
+
+ACTIONS
+
+Actions is a Selenium api/library/class which provide advances user interactipns. 
+    double click
+    drag drop
+    hover
+    click
+    keyboard combinations
+
+
+To use aciopms, we need to create actions object by passing a webdriver object as a constructor.
+
+doubleClick  --> double clicks on an element
+
+
+moveToElement== the mouse on top of the target element
+dragAndDrop  --> moves element on top of another element
+
+
+
+scrolling is achieved using different ways
+
+    action.sendKeys(Keys.PAGE_DOWN).perform();;
+    action.sendKeys(Keys.ARROW_DOWN).perform();;
+    action.moveToElement(eleemnt).perform();
+
+
+cod for scrolling down using javascript:     
+((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element)
+
+
+actions can be chained. 
+    actions.moveTo.click.moveto....
+
+    build() --> a method that is used to create a single action from all the actions. 
+    perform() --> perfoms the action

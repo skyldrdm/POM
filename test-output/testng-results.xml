@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6990" started-at="2018-07-19T18:35:53Z" finished-at="2018-07-19T18:36:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6990" started-at="2018-07-19T18:35:53Z" finished-at="2018-07-19T18:36:00Z">
+      <class name="pomDesign.WebOrderTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="setUp" is-config="true" duration-ms="1795" started-at="2018-07-19T18:35:53Z" finished-at="2018-07-19T18:35:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpApplication()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="setUpApplication" is-config="true" duration-ms="342" started-at="2018-07-19T18:35:55Z" finished-at="2018-07-19T18:35:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpApplication -->
+        <test-method status="PASS" signature="labelsVerication()[pri:1, instance:pomDesign.WebOrderTests@53b9952f]" name="labelsVerication" duration-ms="873" started-at="2018-07-19T18:35:55Z" description="Verify labels and tab links are displayed" finished-at="2018-07-19T18:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labelsVerication -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="logout" is-config="true" duration-ms="240" started-at="2018-07-19T18:35:56Z" finished-at="2018-07-19T18:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="setUpApplication()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="setUpApplication" is-config="true" duration-ms="95" started-at="2018-07-19T18:35:56Z" finished-at="2018-07-19T18:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpApplication -->
+        <test-method status="PASS" signature="availableProductsTest()[pri:2, instance:pomDesign.WebOrderTests@53b9952f]" name="availableProductsTest" duration-ms="842" started-at="2018-07-19T18:35:56Z" description="Verify default Products and prices" finished-at="2018-07-19T18:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- availableProductsTest -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="logout" is-config="true" duration-ms="248" started-at="2018-07-19T18:35:57Z" finished-at="2018-07-19T18:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="setUpApplication()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="setUpApplication" is-config="true" duration-ms="51" started-at="2018-07-19T18:35:57Z" finished-at="2018-07-19T18:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpApplication -->
+        <test-method status="PASS" signature="orderAProduct()[pri:3, instance:pomDesign.WebOrderTests@53b9952f]" name="orderAProduct" duration-ms="2176" started-at="2018-07-19T18:35:57Z" description="Order Page" finished-at="2018-07-19T18:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderAProduct -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="logout" is-config="true" duration-ms="224" started-at="2018-07-19T18:36:00Z" finished-at="2018-07-19T18:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pomDesign.WebOrderTests@53b9952f]" name="tearDown" is-config="true" duration-ms="83" started-at="2018-07-19T18:36:00Z" finished-at="2018-07-19T18:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pomDesign.WebOrderTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
